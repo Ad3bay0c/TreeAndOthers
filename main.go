@@ -1,13 +1,12 @@
 package main
 
 import (
-	"bufio"
 	"fmt"
-	"os"
-	"strings"
+	"github.com/Ad3bay0c/TreeImplementation/tree"
 )
 
 func main() {
+
 	//var n int
 	//fmt.Scanf("%d", &n)
 	//fmt.Printf("N value is .....%d\n", n)
@@ -18,23 +17,21 @@ func main() {
 	//	fmt.Printf("Val %d, Left %d, Right %d\n", val, left, right)
 	//}
 
-	//t := &tree.Tree{Value: 25}
-	//t.AddToTree(27)
-	//t.AddToTree(26)
-	//t.AddToTree(1)
-	//t.AddToTree(13)
-	//t.AddToTree(30)
-	//t.PrintInorder()
-	//fmt.Println()
-	//t.PrintPreOrder()
-	//fmt.Println()
-	//t.PrintPostOrder()
-	//fmt.Println()
-	//
-	//t.DeleteFromTree(1)
-	//t.PrintInorder()
-	//fmt.Println()
-	var result string
-	 result, _ = bufio.NewReader(os.Stdin).ReadString('\n')
-	fmt.Println(strings.Split(strings.TrimRight(result, "\n"), " "))
+	t := &tree.Tree{Value: 25}
+	t.AddToTree(27)
+	t.AddToTree(26)
+	t.AddToTree(1)
+	t.AddToTree(13)
+	t.AddToTree(30)
+	t.PrintInorder()
+	fmt.Println()
+	t.PrintPreOrder()
+	fmt.Println()
+	t.PrintPostOrder()
+	fmt.Println()
+
+	t.DeleteFromTree(1)
+	t.PrintInorder()
+	fmt.Println()
+
 }
